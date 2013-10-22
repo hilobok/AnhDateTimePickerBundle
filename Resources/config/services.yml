@@ -1,0 +1,20 @@
+parameters:
+    anh_datetimepicker.datetime_type_extension.class: Anh\Bundle\DateTimePickerBundle\Form\Extension\DateTimeTypeExtension
+    anh_datetimepicker.date_type_extension.class: Anh\Bundle\DateTimePickerBundle\Form\Extension\DateTypeExtension
+    anh_datetimepicker.time_type_extension.class: Anh\Bundle\DateTimePickerBundle\Form\Extension\TimeTypeExtension
+
+services:
+    anh_datetimepicker.datetime_type_extension:
+        class: %anh_datetimepicker.datetime_type_extension.class%
+        tags:
+            - { name: form.type_extension, alias: datetime }
+
+    anh_datetimepicker.date_type_extension:
+        class: %anh_datetimepicker.date_type_extension.class%
+        tags:
+            - { name: form.type_extension, alias: date }
+
+    anh_datetimepicker.time_type_extension:
+        class: %anh_datetimepicker.time_type_extension.class%
+        tags:
+            - { name: form.type_extension, alias: time }

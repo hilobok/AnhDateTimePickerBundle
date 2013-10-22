@@ -1,7 +1,7 @@
 {
     "name": "anh/datetimepicker-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony bundle wich implements jQuery UI date and time pickers in a Form Type.",
+    "description": "Symfony bundle wich implements jQuery UI date and time pickers in a Form Type Extension.",
     "license": "MIT",
     "authors": [
         {

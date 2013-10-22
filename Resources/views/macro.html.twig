@@ -1,0 +1,42 @@
+{% macro javascript(includeJQuery) %}
+    {% if includeJQuery %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    {% endif %}
+
+    {% javascripts
+        '@AnhDateTimePickerBundle/Resources/vendor/jQuery-Timepicker-Addon/jquery-ui-timepicker-addon.js'
+    %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+{% endmacro %}
+
+{% macro stylesheets(includeJQuery) %}
+    {% if includeJQuery %}
+        <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+    {% endif %}
+
+    {% stylesheets
+        '@AnhDateTimePickerBundle/Resources/vendor/jQuery-Timepicker-Addon/jquery-ui-timepicker-addon.css'
+        '@AnhDateTimePickerBundle/Resources/public/style.css'
+    %}<link rel="stylesheet" href="{{ asset_url }}" />{% endstylesheets %}
+{% endmacro %}
+
+{% macro init() %}
+    <script type="text/javascript">
+        $(function() {
+            $('[data-picker]').each(function(key, value) {
+                var options = $(value).data('picker');
+
+                switch ($(value).data('pickertype')) {
+                    case 'date':
+                        $(value).datepicker(options);
+                        break;
+
+                    case 'time':
+                    case 'datetime':
+                        $(value).datetimepicker(options);
+                        break;
+                }
+            });
+        });
+    </script>
+{% endmacro %}
