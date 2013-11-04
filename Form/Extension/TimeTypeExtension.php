@@ -1,6 +1,6 @@
 <?php
 
-namespace Anh\Bundle\DateTimePickerBundle\Form\Extension;
+namespace Anh\DateTimePickerBundle\Form\Extension;
 
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\FormView;
@@ -8,7 +8,7 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\OptionsResolver\Options;
 
-use Anh\Bundle\DateTimePickerBundle\FormatConverter;
+use Anh\DateTimePickerBundle\FormatConverter;
 
 class TimeTypeExtension extends AbstractTypeExtension
 {

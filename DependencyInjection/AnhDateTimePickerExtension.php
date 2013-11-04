@@ -1,6 +1,6 @@
 <?php
 
-namespace Anh\Bundle\DateTimePickerBundle\DependencyInjection;
+namespace Anh\DateTimePickerBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

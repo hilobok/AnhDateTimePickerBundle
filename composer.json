@@ -17,11 +17,11 @@
 
     "autoload":{
         "psr-0":{
-            "Anh\\Bundle\\DateTimePickerBundle": ""
+            "Anh\\DateTimePickerBundle": ""
         }
     },
 
-    "target-dir": "Anh/Bundle/DateTimePickerBundle",
+    "target-dir": "Anh/DateTimePickerBundle",
 
     "extra": {
         "branch-alias": {

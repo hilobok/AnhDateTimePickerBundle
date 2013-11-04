@@ -1,6 +1,6 @@
 <?php
 
-namespace Anh\Bundle\DateTimePickerBundle;
+namespace Anh\DateTimePickerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
