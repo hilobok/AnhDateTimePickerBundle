@@ -65,7 +65,7 @@ public function buildForm(FormBuilderInterface $builder, array $options)
 
 ## Include resources
 
-Bundle provides assets for javascript and stylesheet — `@dateTimePicker_js` and `@dateTimePicker_css`. Don't forget to include jQuery and jQuery UI.
+Bundle provides assets for javascript and stylesheet — `@anh_dateTimePicker_js` and `@anh_dateTimePicker_css`. Don't forget to include jQuery and jQuery UI.
 
 ```html
 {% block javascripts %}
