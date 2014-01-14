@@ -36,13 +36,13 @@ class AnhDateTimePickerExtension extends Extension implements PrependExtensionIn
             'assets' => array(
                 'anh_dateTimePicker_css' => array(
                     'inputs' => array(
-                        'bundles/anhdatetimepicker/components/jQuery-Timepicker-Addon/src/jquery-ui-timepicker-addon.css',
+                        'bundles/anhdatetimepicker/components/jQuery-Timepicker-Addon/dist/jquery-ui-timepicker-addon.min.css',
                         'bundles/anhdatetimepicker/style.css'
                     )
                 ),
                 'anh_dateTimePicker_js' => array(
                     'inputs' => array(
-                        'bundles/anhdatetimepicker/components/jQuery-Timepicker-Addon/src/jquery-ui-timepicker-addon.js',
+                        'bundles/anhdatetimepicker/components/jQuery-Timepicker-Addon/dist/jquery-ui-timepicker-addon.min.js',
                         'bundles/anhdatetimepicker/init.js'
                     )
                 )
