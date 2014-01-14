@@ -29,7 +29,7 @@ public function registerBundles()
 $ app/console sp:bower:install
 ```
 
-## Create form filed
+## Create form field(s)
 
 ```php
 <?php
