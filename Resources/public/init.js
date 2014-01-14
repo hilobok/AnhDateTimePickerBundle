@@ -1,16 +1,19 @@
-$(function() {
-    $('[data-picker]').each(function(key, value) {
-        var options = $(value).data('picker');
+(function($) {
+    $(function() {
+        $('[data-picker]').each(function(key, element) {
+            var options = $(element).data('picker') || {};
+            var type = $(element).data('pickertype') || 'date';
 
-        switch ($(value).data('pickertype')) {
-            case 'date':
-                $(value).datepicker(options);
-                break;
+            switch (type) {
+                case 'date':
+                    $(element).datepicker(options);
+                    break;
 
-            case 'time':
-            case 'datetime':
-                $(value).datetimepicker(options);
-                break;
-        }
+                case 'time':
+                case 'datetime':
+                    $(element).datetimepicker(options);
+                    break;
+            }
+        });
     });
-});
+})(jQuery);
